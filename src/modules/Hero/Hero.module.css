@@ -19,6 +19,11 @@
     margin: 0;
 }
 
+.headline p {
+    margin-top: 0.5rem;
+    color: #6b7280;
+}
+
 .cta {
     background: #2563eb;
     color: white;
