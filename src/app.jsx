@@ -1,9 +1,11 @@
 import { ProfileImage } from './modules/Hero/ProfileImage';
+import fotoPerfil from './assets/img/foto-perfil.jpg';
 import heroStyles from './modules/Hero/Hero.module.css';
 import aboutStyles from './modules/About/About.module.css';
 import experienceStyles from './modules/Experience/Experience.module.css';
 import contactStyles from './modules/Contact/Contact.module.css';
 import { Headline } from './modules/Hero/Headline';
+
 import { CallToAction } from './modules/Hero/CallToAction';
 import { Biography } from './modules/About/Biography';
 import { SkillBadge } from './modules/About/SkillBadge';
@@ -22,16 +24,14 @@ export const App = () => {
     return (
         <>
             <section id="hero" className={heroStyles.hero}>
-                <ProfileImage
-                    src="https://placehold.co/150x150"
-                    alt="Foto de perfil"
-                />
-                <Headline nombre="Tu Nombre" titulo="Desarrollador Frontend" />
-                <CallToAction texto="Contáctame" href="#contact" />
+                <ProfileImage src={fotoPerfil} alt="Foto de perfil" />
+
+                <Headline nombre="Sung Jin-Woo" titulo="Monarca de las Sombras" />
+                <CallToAction texto="Ver mis logros" href="#contact" />
             </section>
 
             <section id="about" className={aboutStyles.about}>
-                <Biography texto="Escribe aquí tu perfil profesional." />
+                <Biography texto="Soy un cazador que comenzó con el rango E y era conocido como el más débil de todos. Después de sobrevivir a una mazmorra doble, recibí el Sistema, gracias al cual pude subir de nivel y aumentar constantemente mis habilidades. Con cada batalla me hice más fuerte hasta convertirme en el Monarca de las Sombras. Ahora utilizo mi poder y mi ejército de sombras para proteger a las personas que me importan y enfrentar a mis enemigos." />
                 <SkillBadge habilidades={habilidadesData} />
             </section>
 
