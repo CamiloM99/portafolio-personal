@@ -1,0 +1,11 @@
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.item {
+    border-left: 3px solid #2563eb;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
